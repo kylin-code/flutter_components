@@ -7,8 +7,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter bottomNavigationBar',
-        theme: ThemeData.light(),
-        home: BottomNavigationWidget());
+        title: '轻相册', theme: ThemeData.light(), home: BottomNavigationWidget());
   }
 }

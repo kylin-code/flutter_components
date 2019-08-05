@@ -33,31 +33,52 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: _BottomNavigationColorRed,
+                  color: _currentIndex == 0
+                      ? _BottomNavigationColorRed
+                      : _BottomNavigationColor,
                 ),
                 title: Text('Home',
-                    style: TextStyle(color: _BottomNavigationColorRed))),
+                    style: TextStyle(
+                      color: _currentIndex == 0
+                          ? _BottomNavigationColorRed
+                          : _BottomNavigationColor,
+                    ))),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.email,
-                  color: _BottomNavigationColor,
+                  color: _currentIndex == 1
+                      ? _BottomNavigationColorRed
+                      : _BottomNavigationColor,
                 ),
                 title: Text('Email',
-                    style: TextStyle(color: _BottomNavigationColor))),
+                    style: TextStyle(
+                        color: _currentIndex == 1
+                            ? _BottomNavigationColorRed
+                            : _BottomNavigationColor))),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.pages,
-                  color: _BottomNavigationColor,
+                  color: _currentIndex == 2
+                      ? _BottomNavigationColorRed
+                      : _BottomNavigationColor,
                 ),
                 title: Text('Pages',
-                    style: TextStyle(color: _BottomNavigationColor))),
+                    style: TextStyle(
+                        color: _currentIndex == 2
+                            ? _BottomNavigationColorRed
+                            : _BottomNavigationColor))),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.airplay,
-                  color: _BottomNavigationColor,
+                  color: _currentIndex == 3
+                      ? _BottomNavigationColorRed
+                      : _BottomNavigationColor,
                 ),
                 title: Text('AipPlay',
-                    style: TextStyle(color: _BottomNavigationColor))),
+                    style: TextStyle(
+                        color: _currentIndex == 3
+                            ? _BottomNavigationColorRed
+                            : _BottomNavigationColor))),
           ],
           currentIndex: _currentIndex,
           onTap: (int index) {
