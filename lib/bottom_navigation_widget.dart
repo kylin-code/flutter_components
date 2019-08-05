@@ -10,6 +10,7 @@ class BottomNavigationWidget extends StatefulWidget {
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   final _BottomNavigationColor = Colors.blue;
+  final _BottomNavigationColorRed = Colors.red;
   int _currentIndex = 0;
   List<Widget> navList = List();
 
@@ -32,10 +33,10 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: _BottomNavigationColor,
+                  color: _BottomNavigationColorRed,
                 ),
                 title: Text('Home',
-                    style: TextStyle(color: _BottomNavigationColor))),
+                    style: TextStyle(color: _BottomNavigationColorRed))),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.email,
