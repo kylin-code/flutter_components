@@ -5,8 +5,9 @@ class AirplayScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Airplay'),
-        ),
+            title: Center(
+          child: Text('Airplay'),
+        )),
         body: Center(
           child: Text('Airplay'),
         ));

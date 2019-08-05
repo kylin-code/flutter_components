@@ -5,8 +5,9 @@ class EmailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Email'),
-        ),
+            title: Center(
+          child: Text('Email'),
+        )),
         body: Center(
           child: Text('Email'),
         ));

@@ -5,8 +5,9 @@ class PagesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Pages'),
-        ),
+            title: Center(
+          child: Text('Pages'),
+        )),
         body: Center(
           child: Text('Pages'),
         ));
