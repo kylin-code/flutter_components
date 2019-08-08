@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'pages/home_screen.dart';
-import 'pages/email_screen.dart';
-import 'pages/pages_screen.dart';
-import 'pages/airplay_screen.dart';
+import '../pages/home_screen.dart';
+import '../pages/email_screen.dart';
+import '../pages/pages_screen.dart';
+import '../pages/user_screen.dart';
 
 class BottomNavigationWidget extends StatefulWidget {
   _BottomNavigationWidgetState createState() => _BottomNavigationWidgetState();
@@ -20,7 +20,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
       ..add(HomeScreen())
       ..add(EmailScreen())
       ..add(PagesScreen())
-      ..add(AirplayScreen());
+      ..add(UserScreen());
     super.initState();
   }
 
@@ -37,7 +37,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
                       ? _BottomNavigationColorRed
                       : _BottomNavigationColor,
                 ),
-                title: Text('Home',
+                title: Text('首页',
                     style: TextStyle(
                       color: _currentIndex == 0
                           ? _BottomNavigationColorRed
@@ -69,12 +69,12 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
                             : _BottomNavigationColor))),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.airplay,
+                  Icons.account_box,
                   color: _currentIndex == 3
                       ? _BottomNavigationColorRed
                       : _BottomNavigationColor,
                 ),
-                title: Text('AipPlay',
+                title: Text('我的',
                     style: TextStyle(
                         color: _currentIndex == 3
                             ? _BottomNavigationColorRed

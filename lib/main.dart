@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'bottom_navigation_widget.dart';
+import './route/routers.dart';
 
 void main() => runApp(new MyApp());
 
