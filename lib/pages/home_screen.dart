@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
           child: MaterialButton(
             child: Text('点击'),
             onPressed: () {
-              Navigator.of(context).push(CustomRoute(SecondPage()));
+              Navigator.of(context).push(CustomRoute1(SecondPage()));
             },
           ),
         ));
